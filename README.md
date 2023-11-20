@@ -34,6 +34,7 @@ IGOR involves several mechanical and programatic projects working in tandem. The
     - Electromagnets:
         - [20x15mm 5V](https://www.aliexpress.us/item/2251832388745731.html?spm=a2g0o.productlist.main.5.27407c36e4VteU&algo_pvid=15f16463-5bf9-4efb-90dd-8b5989f0b145&algo_exp_id=15f16463-5bf9-4efb-90dd-8b5989f0b145-2&pdp_npi=4%40dis%21USD%211.70%211.19%21%21%211.70%21%21%402103226117002704286314718e21e3%2112000024164379351%21sea%21US%212673377647%21&curPageLogUid=9mks4d6E7IZy)
         - [10x10mm 6V](https://www.aliexpress.us/item/2251832637809479.html?spm=a2g0o.detail.0.0.34b53153CTKQpz&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.362094.0&scm_id=1007.40050.362094.0&scm-url=1007.40050.362094.0&pvid=083fd9e9-f589-4a9c-b498-bd4fd91a01a6&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.362094.0,pvid:083fd9e9-f589-4a9c-b498-bd4fd91a01a6,tpp_buckets:668%232846%238112%231997&pdp_npi=4%40dis%21USD%212.50%211.97%21%21%212.50%21%21%402103011017002704501335673efcc1%2164932969706%21rec%21US%212673377647%21)
+    - Microphone / speaker
 - Python programming running on the Raspberry Pi
     - Stone moving controls
     - Image capture controls

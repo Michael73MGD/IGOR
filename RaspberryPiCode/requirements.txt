@@ -1,0 +1,4 @@
+pyserial
+paramiko
+opencv-python
+numpy
