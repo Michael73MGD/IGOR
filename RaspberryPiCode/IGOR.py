@@ -20,7 +20,8 @@ ser.close()
 
 def camera_test():
     camera = PiCamera()
-    camera.capture('/home/pi/Desktop/image.jpg')
+    camera.resolution = (2592, 1944)
+    camera.capture('./image.jpg')
 
 
 # raspistill -o Desktop/image.jpg
