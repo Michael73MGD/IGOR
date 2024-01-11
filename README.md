@@ -28,22 +28,39 @@ IGOR involves several mechanical and programatic projects working in tandem. The
     - We've brought superior AI to Go, it's time to upgrade coaches to match and get more people into this historic game
 
 ### Task list
-- 3D printed 9x9 Go board with divets that allow reliable plasement of stones
-- Stones embedded with magnets
+- 3D printed 9x9 Go board with divets that allow reliable placement of stones
+    - See `STLs/board/full_board_VX.stl`
+    - Board was custom designed for this purpose, inlcuding lines between each stone location and rounded divets for them to reliably fall into
+- Stones embedded with iron (for the electromaget to attract)
+    - [Hex nuts](https://a.co/d/gF2kllP)
+        - The hex nut needs to be ferromagnetic (iron/steel) so that it can be picked up and released by the electromagnet
+        - 304 Stainless Steel would not work for this purpose, therefore the zinc-plated steel nuts were used
+    - See `STLs/board/stone_M6_hole_VX.stl`
+    - Stone was designed starting from an online model (`STLs/STL_sources.md`), resized, trimmed, and with a M6 nut-sized hole in it for the hex nut to be placed in
 - 3D printed electromagnetic stone mover (5V)
     - Electromagnets:
         - [20x15mm 5V](https://www.aliexpress.us/item/2251832388745731.html?spm=a2g0o.productlist.main.5.27407c36e4VteU&algo_pvid=15f16463-5bf9-4efb-90dd-8b5989f0b145&algo_exp_id=15f16463-5bf9-4efb-90dd-8b5989f0b145-2&pdp_npi=4%40dis%21USD%211.70%211.19%21%21%211.70%21%21%402103226117002704286314718e21e3%2112000024164379351%21sea%21US%212673377647%21&curPageLogUid=9mks4d6E7IZy)
-        - [10x10mm 6V](https://www.aliexpress.us/item/2251832637809479.html?spm=a2g0o.detail.0.0.34b53153CTKQpz&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.362094.0&scm_id=1007.40050.362094.0&scm-url=1007.40050.362094.0&pvid=083fd9e9-f589-4a9c-b498-bd4fd91a01a6&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.362094.0,pvid:083fd9e9-f589-4a9c-b498-bd4fd91a01a6,tpp_buckets:668%232846%238112%231997&pdp_npi=4%40dis%21USD%212.50%211.97%21%21%212.50%21%21%402103011017002704501335673efcc1%2164932969706%21rec%21US%212673377647%21)
+        - [10x10mm 6V (selected)](https://www.aliexpress.us/item/2251832637809479.html?spm=a2g0o.detail.0.0.34b53153CTKQpz&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.362094.0&scm_id=1007.40050.362094.0&scm-url=1007.40050.362094.0&pvid=083fd9e9-f589-4a9c-b498-bd4fd91a01a6&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.362094.0,pvid:083fd9e9-f589-4a9c-b498-bd4fd91a01a6,tpp_buckets:668%232846%238112%231997&pdp_npi=4%40dis%21USD%212.50%211.97%21%21%212.50%21%21%402103011017002704501335673efcc1%2164932969706%21rec%21US%212673377647%21)
     - Microphone / speaker
+        - Bluetooth speaker should suffice
 - 3D printed camera mount
-    - Needs to be easily mounted/dismounted
-    - Fits Raspberry Pi camera V2.1
-    - Needs a good view of the game board
+    - Requirements:
+        - Needs to be easily mounted/dismounted
+        - Fits Raspberry Pi camera V2.1
+        - Needs a good view of the game board
+    - Solution: `STLs/raspi/picase_dovetail.stl`, `dove19.6.stl`, `picamcap.stl`
+        - The Pi case is modified to mount onto the aluminum extrusions on the top of my 3D printer, and provides a dovetail mount at the front for the camera to slide onto
+        - The camera mount is modified to slot into the dovetail and provide an ideal view of the printer bed
+
 - 3D printed stone hopper
-    - Needs to allow automatic feeding of stones to the electromagnet
-    - Gravity driven, mounted to the side of the unit
-    - Electromagnet moves to a position above the next stone and lifts it up, allowing the next to fall into place
-    - Magnets in the stones cannot interfere, need to store them side to side
+    - Requirements:
+        - Needs to allow automatic feeding of stones to the electromagnet
+        - Gravity driven, mounted to the side of the unit
+        - Electromagnet moves to a position above the next stone and lifts it up, allowing the next to fall into place
+        - Magnets in the stones cannot interfere, need to store them side to side
+    - Custom designed from scratch to match needs and fit custom game stones
+        - `STLs/Hopper/hopper_VX.stl`
+        - Mounting solution will likely attach to the right side x-axis 
 - Python programming running on the Raspberry Pi
     - Stone moving controls
     - Image capture controls
@@ -56,3 +73,7 @@ IGOR involves several mechanical and programatic projects working in tandem. The
     - Ability to control Go AI difficulty
     - Ability to run a tutorial session
     - Ability to set up and explain practice scenarios
+    - Stretch goals:
+        - AI image generator - possibly pixel graphics. Generate an avatar for each difficulty, can regenerate each time
+        - After every move, assess situation and generate an image along with a text response 
+        - Model after a pixel graphics game with speech bubbles 
