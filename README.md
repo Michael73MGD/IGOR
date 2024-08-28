@@ -1,6 +1,6 @@
 # IGOR: Intelligent GO Robot
 
-IGOR is a project focused on bringing an AI-power coach, teacher, and opponent to the board game Go, which comes from the Japanese word igo, where IGOR gets its name.  
+IGOR is a project focused on bringing an AI-powered coach, teacher, and opponent to the board game Go, which comes from the Japanese word igo, where IGOR gets its name.  
 
 ## Motivation
 - This project follows in the footsteps of a Hackathon project I participated in a few years ago - a chess-playing robot that I affectionately named [Chester](https://github.com/Michael73MGD/light-blue). Chester was built, programmed, and presented in just 24 hours during a covid-era hackathon in 2021. 
